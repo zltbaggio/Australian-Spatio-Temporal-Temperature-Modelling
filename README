@@ -1,4 +1,4 @@
-This repository is created for the research paper on Australian Historical Temperature Data. This research is going to use data that has been collected over 1970 - 2012 in more than 200 meteorological stations, mostly in NSW and VIC, to investigate the spatial and temporal dynamics of the temperature in this area. We are especially interested in the existence of long-term trend and its magnitude (if any).
+This repository is created for the research paper on Australian Historical Temperature Data. This research is going to use data that has been collected over 1970 - 2012 at more than 200 meteorological stations, mostly in NSW and VIC, to investigate the spatial and temporal dynamics of the temperature in this area. We are especially interested in the existence of long-term trend and its magnitude (if any).
 
 The model will be a hierarchical model and fitted by MCMC.
 

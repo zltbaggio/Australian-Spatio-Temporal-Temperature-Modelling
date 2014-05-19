@@ -1,0 +1,245 @@
+NOTES FOR DX04X COMPLETED ON 25/02/2014
+____________________________________________________________________________________________
+____________________________________________________________________________________________
+
+
+Monthly data for requested period 1800 to 2014 - annual values have been calculated using the functions:
+average [mean daily maximum temperature in degrees C, mean daily minimum temperature in degrees C]
+highest [highest monthly temperature in degrees C]
+lowest [lowest monthly temperature in degrees C]
+
+
+Standard layout
+
+Byte Location , Byte Size  , Explanation
+--------------------------------------------------------------------------------------------
+
+
+1-2           ,2           , Record identifier - dx
+4-9           ,6           , Bureau of Meteorology Station Number.
+11-210        ,200         , Element description
+212-220       ,9           , Year(s)
+222-230       ,9           , January
+232-240       ,9           , February
+242-250       ,9           , March
+252-260       ,9           , April
+262-270       ,9           , May
+272-280       ,9           , June
+282-290       ,9           , July
+292-300       ,9           , August
+302-310       ,9           , September
+312-320       ,9           , October
+322-330       ,9           , November
+332-340       ,9           , December
+342-350       ,9           , Annual
+352-353       ,2           , Quality control indicator (QC indicates that QC has been taken
+                             into consideration; blanks indicate that no quality check has
+                             been performed).
+355           ,1           , # symbol, end of record indicator.
+
+
+Monthly summary for requested period 1800 to 2014 - annual values have been calculated using the functions:
+average [mean daily maximum temperature in degrees C, mean daily minimum temperature in degrees C]
+highest [highest monthly temperature in degrees C]
+lowest [lowest monthly temperature in degrees C]
+
+Byte Location , Byte Size  , Explanation
+--------------------------------------------------------------------------------------------
+
+
+1-2           ,2           , Record identifier - dx
+4-9           ,6           , Bureau of Meteorology Station Number.
+11-210        ,200         , Element description
+212-246       ,35          , Statistic description
+248-256       ,9           , January
+258-266       ,9           , February
+268-276       ,9           , March
+278-286       ,9           , April
+288-296       ,9           , May
+298-306       ,9           , June
+308-316       ,9           , July
+318-326       ,9           , August
+328-336       ,9           , September
+338-346       ,9           , October
+348-356       ,9           , November
+358-366       ,9           , December
+368-376       ,9           , Annual
+378           ,1           , # symbol, end of record indicator.
+
+
+
+
+ELEMENTS CHOSEN
+_______________
+
+Highest monthly temperature in degrees C
+Lowest monthly temperature in degrees C
+Mean daily maximum temperature in degrees C
+Mean daily minimum temperature in degrees C
+
+For primary information on elements see http://www.bom.gov.au/climate/cdo/about/definitionsother.shtml#cloudydays
+
+
+
+
+DATA USED
+_________
+
+Data is displayed only for those months where there were at least 21 days on which observations
+were taken.  For data observed several times a day, only those days where there were at least
+6 observations are included.  Only quality controlled data has been used.
+
+
+
+
+GAPS AND MISSING DATA
+_____________________
+
+Very few sites have a complete unbroken record of climate information. A site
+may have been closed, reopened, upgraded to a full weather site or downgraded
+to a rainfall only site during its existence causing breaks in the record for
+some or all elements. Some gaps may be for one element due to a damaged
+instrument, others may be for all elements due to the absence or illness of
+an observer.
+
+
+
+
+INSTUMENTS AND OBSERVATIONAL PRACTICES
+______________________________________
+
+Historically a nearby site (within about 1 mile in earlier days) may have used the same 
+site number.  There may have been changes in instrumentation and/or observing practices
+over the period included in a dataset, which may have an effect on the long-term record.
+In recent years many sites have had observers replaced by Automatic Weather Stations,
+either completely or at certain times of the day.  
+
+
+
+
+TIME
+____
+
+For a part of the year some Australian States adopt Daylight Saving Time (DST), and
+observers continue to take observations according to the local clock.  Times provided 
+with this data are Local Time, unless otherwise noted. 
+
+Care needs to be taken when comparing values from year to year or month to month, because for
+some elements the effect of one hour can be marked, for example air temperature often rises 
+sharply between 8am and 9am.
+
+Daylight Saving has been used in many Australian states since 1973. The
+changeovers occur almost always in October and March, but exact dates vary
+from State to State and year to year. More information can be found at:
+http://www.bom.gov.au/climate/averages/tables/daysavtm.shtml
+
+
+
+
+ROUNDING
+________
+
+The primary way of sending current weather information around the world is via a coded message 
+known as a SYNOP.  This message only allows some measurements to be sent as rounded values.  
+Once manuscript records have been sent in many of these values are typed in with greater 
+precision (normally to one decimal place). This usually occurs within a few months.
+
+If consecutive values all have a zero in the decimal place, then it is almost certain that
+rounding was used earlier.  A new type of message format is progressively being introduced to
+overcome this situation.
+
+
+
+
+COPYRIGHT
+_________
+
+The copyright for any data is held in the Commonwealth of Australia and the purchaser
+shall give acknowledgement of the source in reference to the data.  Apart from dealings
+under the copyright Act, 1968, the purchaser shall not reproduce, modify or supply (by
+sale or otherwise) these data without written permission.  Enquiries should be made in
+the first instance to the National Climate Centre, Bureau of Meteorology, 
+PO Box 1289K, Melbourne 3001, marked to the attention of SRDS.
+
+
+
+
+LIABILITY
+_________
+
+While every effort is made to supply the best data available this may not be possible
+in all cases.  We do not give any warranty, nor accept any liability in relation
+to the information given, except that liability (if any), that is required by law.
+
+
+
+
+
+IF DATA IS NOT AS REQUESTED
+___________________________
+
+If the data provided are not as requested, the data will be repeated at no extra cost, 
+provided that:
+a) the Bureau is notified within 60 days.
+b) the printout/disc/data file is returned to the Bureau for checking.
+c) there has been a fault or error in providing the data.
+
+Where there has been no fault or error of provision, the cost involved in
+requested corrective action such as resending the data or providing alternative
+sites will be charged for as necessary.
+
+
+
+
+____________________________________________________________________________________________
+____________________________________________________________________________________________
+
+SITE DETAILS FILE
+
+This file contains the details for the current site or are those which applied when the site
+was closed.  Many sites have been moved, downgraded, upgraded etc over the years.
+
+Byte Location , Byte Size  , Explanation
+--------------------------------------------------------------------------------------------
+
+
+1-2           ,2           , Record identifier - st
+4-9           ,6           , Bureau of Meteorology Station Number.
+11-14         ,4           , Rainfall district code
+16-55         ,40          , Station Name.
+57-63         ,7           , Month/Year site opened. (MM/YYYY)
+65-71         ,7           , Month/Year site closed. (MM/YYYY)
+73-80         ,8           , Latitude to 4 decimal places, in decimal degrees.
+82-90         ,9           , Longitude to 4 decimal places, in decimal degrees.
+92-106        ,15          , Method by which latitude/longitude was derived.
+108-110       ,3           , State.
+112-117       ,6           , Height of station above mean sea level in metres.
+119-124       ,6           , Height of barometer above mean sea level in metres.
+126-130       ,5           , WMO (World Meteorological Organisation) Index Number.
+132-135       ,4           , First year of data supplied in data file.
+137-140       ,4           , Last year of data supplied in data file.
+142           ,1           , # symbol, end of record indicator.
+
+
+
+
+LATITUDES AND LONGITUDES
+________________________
+
+Latitudes and longitudes are given to 4 decimal places, but in many cases will not be
+accurate to 4 decimal places.  This is because in the early days the positions of stations
+were estimated from maps. Gradually the network of open stations is being checked (and
+if necessary corrected) using GPS (Global Positioning System). The method used is given
+in the site details file.
+
+
+
+
+WMO INDEX NUMBER
+________________
+
+This is the number assigned to a site that makes international weather reports every day.
+The number is not actively used in the climate archive, and only a few hundred such 
+numbers are assigned at any time.  These are not perpetual but may be reassigned 
+where a site no longer makes the international reports (synops); thus a particular
+number cannot be regarded as unique and exclusive to any particular site.

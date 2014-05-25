@@ -1,10 +1,0 @@
-Monthly data for requested period 1800 to 2014 - annual values have been calculated using the functions:average [mean daily maximum temperature in degrees C, mean daily minimum temperature in degrees C]highest [highest monthly temperature in degrees C]lowest [lowest monthly temperature in degrees C]#
-dx,Station Number,Element description,Year(s),January,February,March,April,May,June,July,August,September,October,November,December,Annual,Quality control field,#
-dx,  8282,No data available for this station                                    ,QC,#
-#
-Monthly summary for requested period 1800 to 2014 - annual values have been calculated using the functions:average [mean daily maximum temperature in degrees C, mean daily minimum temperature in degrees C]highest [highest monthly temperature in degrees C]lowest [lowest monthly temperature in degrees C]#
-dx,Station Number,Element description,Statistic description,January,February,March,April,May,June,July,August,September,October,November,December,Annual,#
-dx,  8282,Highest monthly temperature in degrees C                                                                                                                                                                ,No data returned in initial query                                     ,#
-dx,  8282,Lowest monthly temperature in degrees C                                                                                                                                                                 ,No data returned in initial query                                     ,#
-dx,  8282,Mean daily maximum temperature in degrees C                                                                                                                                                             ,No data returned in initial query                                     ,#
-dx,  8282,Mean daily minimum temperature in degrees C                                                                                                                                                             ,No data returned in initial query                                     ,#
